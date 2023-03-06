@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <style>
+        #demo{
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+    <!-- task 11 -->
+    <style>
+        p span {
+            text-decoration: underline;
+        }
+    </style>
+  
+    <script src=
+"https://code.jquery.com/jquery-git.js">
+    </script>
+    <!-- task 12 -->
+</style>
+    <style>
+        .GFG1 {
+            color: green;
+        }
+  
+        .GFG2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+  <!-- Import jQuery cdn library -->
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      </script>
+    
+      <script>
+          $(document).ready(function () {
+              $("button").click(function () {
+                  $("p").removeClass();
+              });
+          });
+      </script>
+      <!-- task 13 -->
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Check if internet connection is working</title>
+<style>
+  body { font-family: sans-serif; }
+h1 {
+  margin: 10px 0;
+  padding: 0 5px;
+  font-size: 2em;
+  border: 2px double 
+green;
+}
+</style>
+    <!-- task 14 -->
+    <title>
+        How to distinguish left and right 
+        mouse click using jQuery?
+    </title>
+      <!-- task 15 -->
+      <script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Detect pressing Enter key on keyboard using jQuery.</title>
+
+        <!-- task 16 -->
+        <script src="https://code.jquery.com/jquery-git.js"></script>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>Count number of rows and columns in a table using jQuery.</title>
+
+        <!-- task 17 -->
+        <title>How to get the value of textArea</title>
+        <script src=
+"https://code.jquery.com/jquery-1.12.4.min.js">
+        </script>
+        <!-- task 18 -->
+        <script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+        <!-- task 19 -->
+        <script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Find the absolute position of an element using jQuery</title>
+        <!-- task 20 -->
+</head>
+  
+<body>
+    <!-- task 11 -->
+    <h2>underline</h2>
+    <h1 id="demo">task 11</h1>
+    <h2>
+        How to underline all the words 
+        of a text using jQuery?
+    </h2>
+  
+    <p> 
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+       Quae modi sapiente commodi similique ex adipisci enim, est asperiores perferendis ratione qui quidem ut, numquam praesentium.
+    </p>
+      
+    <script>
+        $(document).ready(function () {
+            $('p').each(function () {
+                var text_words = 
+                    $(this).text().split(' ');
+  
+                $(this).empty().html(function () {
+                    for (i = 0; i < text_words.length; i++) {
+                        if (i === 0) {
+                            $(this).append('<span>' 
+                            + text_words[i] + '</span>');
+                        }
+                        else {
+                            $(this).append(' <span>' 
+                            + text_words[i] + '</span>');
+                        }
+                    }
+                });
+            });
+        });
+    </script><hr>
+    <!-- task 12 -->
+    <h1 id="demo">task 12</h1>
+    <div style="text-align: center;">
+        <h1 style="color: green;">
+            task 12
+        </h1>
+      
+        <h3>
+            How to remove all CSS classes using jQuery?
+        </h3>
+      
+        <p class="GFG1 GFG2">
+            Computer Science Portal
+        </p>
+      
+        <button>Click Here!</button>
+    </div><hr>
+    <!-- task 13 -->
+    <h1 id="demo">task 13</h1>
+    <h1 id="MyInput">jQuery Exercises</h1>
+     
+     <input type="button" value="Remove border style" onClick="remove_style()" />
+     <script>
+       function remove_style() {
+   $("#MyInput").css("border", "0");
+   }
+     </script>
+     <!-- task 14 -->
+     <h1 id="demo">task 14</h1>
+     <h1 style="color: green">
+       momin vahid ali
+    </h1>
+      <b>
+        How to distinguish left and 
+        right mouse click using jQuery?
+    </b>
+      <p>You are pressing the :
+          <div class="output">
+    </div>
+    
+      <button>
+        Click Here to check the mousebutton pressed
+    </button>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+      
+      <script type="text/javascript">
+          $('button').mousedown(function(event) {
+              switch (event.which) {
+                  case 1:
+                      document.querySelector('.output').innerHTML =
+                          'Left Mouse Button';
+                      break;
+                  case 2:
+                      document.querySelector('.output').innerHTML =
+                          'Middle Mouse Button';
+                      break;
+                  case 3:
+                      document.querySelector('.output').innerHTML =
+                          'Right Mouse Button';
+                      break;
+                  default:
+                      break;
+              }
+          });
+      </script>
+<!-- task 15 -->
+<h1 id="demo">task 15</h1>
+<p>Input a value within the textbox and press Enter</p>
+ <form>
+ <input type="text" id="hello"></p>
+ </form>
+ <script>
+    $(document).keypress(function(e) {
+    if(e.which == 13) {
+        console.log('You pressed enter!');
+    }
+});
+ </script><hr>
+
+    <!-- task 16 -->
+    <h1 id="demo">task 16</h1>
+    <table id="table1">
+        <tr>
+         <th>Tools</th>
+          <th>Description</th>
+          </tr>
+          <tr>
+          <td>phpMyAdmin</td>
+          <td>Third party, Free, Web based </td>
+          </tr>
+          <tr>
+          <td>HeidiSQL</td>
+          <td>Third party, Free, For Windows </td>
+          </tr>
+          <tr>
+          <td>Adminer</td>
+          <td>Third party, Free</td>
+          </tr>
+          <tr>
+          <td>DBEdit </td>
+          <td>Third party, Free</td>
+          </tr>
+          <tr>
+          <td>dbForge GUI Tools</td>
+           <td>Third party, Free</td>
+           </tr>
+           <tr>
+           <td> Navicat </td>
+           <td>Third party, Commercial </td>
+           </tr>
+           <tr>
+           <td>Maatkit</td>
+           <td>Third party, Command line, free </td>
+           </tr>
+      </table>
+      <script>
+          $.fn.rowCount = function() {
+          return $('tr', $(this).find('tbody')).length;
+      };
+      
+      $.fn.columnCount = function() {
+          return $('th', $(this).find('tbody')).length;
+      };
+      var
+      
+      rowctr = $('#table1').rowCount();
+      var colctr = $('#table1').columnCount();
+      
+      console.log('No of Rows:'+rowctr);
+      console.log('No of Columns:'+colctr);
+      
+      </script>
+
+        <!-- task 17 -->
+        <center>
+            <h1 id="demo">task 17</h1>
+            <h1 style="color: green;">momin vahid ali</h1>
+            <textarea id="txtArea"></textarea><br><br>
+            <button id="btn">Show Text</button>
+        </center>
+        <script>
+            $(document).ready(function () {
+                
+                //This function called when the button is clicked
+                $("#btn").click(function () {
+                    
+                    // val() method is used to get the values from 
+                   // textarea and stored in txt variable
+                    var txt = $("#txtArea").val();
+                    alert(txt);
+                });
+            });
+        </script>
+        <!-- task 18 -->
+        <h1 id="demo">task 18</h1>
+        <form id="myForm" action="sample.php">
+            First name:<br>
+            <input type="text" name="firstname" value="suuuuuuu">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="suuuuuuuu">
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
+            <script>
+            $('#myForm').submit(function() {
+  var values = $(this).serialize();
+  console.log(values);
+});
+        </script> 
+        <!-- task  19 -->
+        <h1 id="demo">task 19</h1>
+        <form id="myForm" action="sample.php">
+            First name:<br>
+            <input type="text" id="nam12" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" id="name2" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
+            <script>
+                var left_position = $("#name2").offset().left - $(document).scrollTop();
+console.log('Left: '+left_position);
+
+var top_position = $("#name2").offset().top - $(document).scrollTop();
+console.log('Right: '+top_position);
+
+            </script>
+            <!-- task 20 -->
+</body>
+</html>
