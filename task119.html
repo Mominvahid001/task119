@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: center;
+            color: green;
+        }
+    </style>
+    <style>
+        .scroll {
+            height: 1000px;
+            background-color: rgb(225, 156, 28);
+        }
+    </style>
+    <!-- task 2 -->
+        <script src="css.html/buggati.png"></script>
+        <script>
+        $(document).ready(function(){
+           $(document).bind("contextmenu",function(e){
+              return false;
+           });
+        });
+        </script>
+        <!-- task 3  -->
+        <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            </script>
+            <!-- task 4 -->
+            <script type="text/javascript" src=
+            "https://code.jquery.com/jquery-3.5.1.js">
+        </script>
+      
+        <script type="text/javascript">
+            $(function() {
+                $("table tr:nth-child(odd)")
+                    .addClass("zebrastripe");
+            });
+        </script>
+      
+        <style type="text/css">
+            body,
+            td {
+                font-size: 10pt;
+                text-align: center;
+            }
+              
+            h1 {
+                color: green;
+            }
+              
+            table {
+                background-color: black;
+                border: 1px black solid;
+                border-collapse: collapse;
+            }
+              
+            th {
+                font-size: 15px;
+                padding: 5px 8px;
+                border: 1px fghfghlkkfgxmhdf. lkhmfdhlk  hsrklmh yhkghmj chet m m c bbegkcmm  gezkgv gsfgkxm 
+                gsdfx  ghdbvmng gdm  hklnoutset silver;
+                background-color: rgb(197, 69, 69);
+                color: white;
+            }
+              
+            tr {
+                border: 1px outset silver;
+                padding: 5px 8px;
+                background-color: rgb(79, 23, 192);
+                margin: 1px;
+            }
+              
+            tr.zebrastripe {
+                background-color:yellowgreen;
+            }
+              
+            td {
+                border: 0.5px outset silver;
+                border-collapse: collapse;
+                padding: 5px 8px;
+            }
+              
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <!-- task 5 -->
+</head>
+<body>
+    <!-- task 1 -->
+    <p id="demo">scroll to the top of the page with jquery.</p>
+    <h1 style="color: aqua" text-align="center">
+        this is a first task
+    </h1>
+    <b>Scroll to the top of the page
+        using JavaScript and jQuery?</b>
+  
+    <p>Click on the button below to
+        scroll to the top of the page.</p>
+  
+    <p class="scroll"> ipsum dolor sit amet consectetur adipisicing elit. Quia fugit totam, doloremque suscipit quibusdam natus error eos! Hic molestias labore tempore alias. Perspiciatis, eaque consequatur.</p>
+  
+    <button onclick="scrollToTop()">
+        Click to scroll to top
+    </button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+    <hr>
+    <!-- task 2 -->
+    <p id="demo">Right click is disabled on this page.</p>
+    <script>
+        $(document).ready(function(){
+           $(document).bind("contextmenu",function(e){
+              return false;
+           });
+        });
+        </script>
+    <hr>
+
+    <!-- task 3 -->
+    <p id="demo">blink text using jquery.</p>
+    <div style="text-align: center;">
+    <h1 style = "color:rgb(226, 16, 139);"  >  
+    
+</h1> 
+
+<p id = "GFG_UP" style = 
+        "font-size: 15px; font-weight: bold;"> 
+</p>
+
+<button onclick = "GFG_Fun()">
+    click here
+</button>
+
+<p id = "GFG_DOWN" style = 
+    "font-size: 20px; font-weight: bold; color:rgb(226, 16, 139);"> 
+</p>
+
+<script>  
+    var el_up = document.getElementById('GFG_UP');
+    var el_down = document.getElementById('GFG_DOWN');
+
+    el_up.innerHTML = "Click on the button to start "
+                    + "the text blinking.";
+    el_down.innerHTML = "momin vahid ali";
+
+    function GFG_Fun() {
+        $('#GFG_DOWN').each(function() {
+            var elem = $(this);
+            setInterval(function() {
+                if (elem.css('visibility') == 'hidden') {
+                    elem.css('visibility', 'visible');
+                } else {
+                    elem.css('visibility', 'hidden');
+                }    
+            }, 100);
+        });
+    }
+</script>
+</div>  <hr>
+<!-- task 4 -->
+<table class="center" >
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>phone</th>
+    </tr>
+    <tr>
+        <td>2535</td>
+        <td>akshay</td>
+        <td>1258359710</td>
+    </tr>
+    <tr>
+        <td>2065</td>
+        <td>mohit</td>
+        <td>7825369514</td>
+    </tr>
+    <tr>
+        <td>1348</td>
+        <td>viky</td>
+        <td>4851353445</td>
+    </tr>
+    <tr>
+        <td>0255</td>
+        <td>rohit</td>
+        <td>4555988295</td>
+    </tr>
+    <tr>
+        <td>2035</td>
+        <td>vivek</td>
+        <td>4535987520</td>
+    </tr>
+</table><hr>
+<!-- task 5 -->
+<p> click the button to print the current web page</p>
+<button onclick="window.print()">print this page</button><hr>
+<!-- task 6 -->
+
+</body>
+</html>
